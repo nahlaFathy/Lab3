@@ -1,0 +1,51 @@
+GET http://localhost:3000/todo
+
+###
+
+GET http://localhost:3000/todo/salma
+
+
+###
+
+Post http://localhost:3000/todo/add-todo
+Content-Type: application/json
+
+{
+    "username":"nehal",
+    "title":"todo-post10"
+}
+
+###
+DELETE http://localhost:3000/todo/delete/7
+
+###
+
+PATCH http://localhost:3000/todo/update/1
+Content-Type: application/json
+
+{
+    "title":"title_patch1",
+    "status":"status_patch1"
+}
+
+###
+
+Post http://localhost:3000/todo/register
+Content-Type: application/json
+
+{
+    "username":"malik",
+     "password":"12345",
+    "firstname":"miky"
+    
+}
+
+###
+Post http://localhost:3000/todo/login
+Content-Type: application/json
+
+{
+    "username":"nour",
+    "password":"2469"
+    
+}

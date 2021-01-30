@@ -1,0 +1,23 @@
+doctype html
+html
+      head
+        title Todo 
+      body
+                    
+        h1 List of todos :
+        hr
+        hr
+        - for(let todo of Todo)
+           ul
+             li='UserName:'+' '+todo.username
+             li='Title:'+' '+todo.title
+             li='Desc:'+' '+todo.desc
+             li='Status:'+' '+todo.status
+             li='Password:'+' '+todo.password
+             br
+             hr
+             br
+
+
+
+
